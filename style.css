@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Public Sans", sans-serif;
+}
+body {
+  background-color: #f1f3f9 !important;
+  min-height: 100vh;
+}
+.logo {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+#search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#mag {
+  position: absolute;
+  z-index: 2;
+  padding: 0 8px;
+}
+#arrow {
+  position: absolute;
+  z-index: 2;
+  right: 8px;
+  padding: 0 8px;
+}
+.breadcrumb > .active {
+  background: linear-gradient(72.47deg, #18a4ff 22.16%, #05c37f 76.47%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sumNavIcon {
+  height: 5rem;
+  width: 25rem;
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  box-sizing: border-box;
+  gap: 1rem;
+}
+.myCar {
+  display: flex;
+  max-height: max-content;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  border: 2px solid rgb(221, 220, 220);
+}
+.contentSub {
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+#tabsGradient a {
+  border: none;
+  background: linear-gradient(72.47deg, #18a4ff 22.16%, #05c37f 76.47%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-image: linear-gradient(72.47deg, #18a4ff 22.16%, #05c37f 76.47%);
+  border-image-slice: 1;
+  border-bottom: 2px solid transparent;
+}
+
+.colorPelletGreen {
+  background-color: #d1f4e3 !important;
+  color: #28c76f !important;
+  font-weight: 600 !important;
+}
+.colorPelletOne {
+  color: #ffffff !important;
+  background-color: #4b465c !important;
+}
+.colorPelletTwo {
+  color: #6f6b7c !important;
+  gap: 0.5rem !important;
+}
+.colorPelletThree {
+  color: #4b465c !important;
+}
+.colorPelletFour {
+  color: #b7b5bd !important;
+}

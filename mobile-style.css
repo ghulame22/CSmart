@@ -1,0 +1,18 @@
+@media only screen and (max-width: 782px) {
+  #search-box {
+    display: none !important;
+  }
+  #utilBtn {
+    display: none !important;
+  }
+  #back {
+    display: flex !important;
+  }
+  #mcol {
+    flex-direction: column;
+  }
+  #mTop {
+    align-items: start !important;
+    padding-right: 0 !important ;
+  }
+}
