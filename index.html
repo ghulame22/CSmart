@@ -34,7 +34,7 @@
     />
   </head>
   <body>
-    <section>
+    <section style="min-width: 23rem">
       <nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid">
           <div class="d-flex align-items-center">
@@ -42,7 +42,9 @@
             <a class="navbar-brand colorPelletThree" href="#">csmart</a>
           </div>
           <form class="d-flex" role="search">
-            <div id="search-box">
+            <div
+              class="d-none d-md-none d-lg-flex align-items-center position-relative"
+            >
               <i id="mag" class="fa fa-search" aria-hidden="true"></i>
               <input
                 class="form-control me-2 px-4"
@@ -126,7 +128,7 @@
           </nav>
           <h4 style="color: #5d586b" class="fw-bold m-0 mt-1">CSmartDev2023</h4>
         </div>
-        <div class="d-flex gap-3" id="utilBtn">
+        <div class="d-flex gap-3 d-none d-md-flex">
           <button
             type="button"
             class="btn d-flex align-items-center colorPelletOne"
@@ -166,45 +168,45 @@
           <div
             class="p-2 d-flex align-items-center justify-content-between border-bottom"
           >
-            <div class="d-flex gap-4 align-items-center">
-              <div class="d-flex align-items-center flex-wrap d-none" id="back">
+            <div class="d-xs-flex d-lg-none">
+              <button type="button" class="btn p-0 d-flex colorPelletTwo">
+                <img src="./Assets/arrow-left.svg" alt="ButtonOnw" />
+                Back
+              </button>
+            </div>
+            <div class="d-flex gap-4 align-items-center d-none d-lg-flex">
+              <div class="d-flex align-items-center flex-wrap">
                 <button type="button" class="btn p-0 d-flex colorPelletTwo">
                   <img src="./Assets/arrow-left.svg" alt="ButtonOnw" />
                   Back
                 </button>
               </div>
-              <div class="d-flex align-items-center flex-wrap" id="search-box">
-                <button type="button" class="btn p-0 d-flex colorPelletTwo">
-                  <img src="./Assets/arrow-left.svg" alt="ButtonOnw" />
-                  Back
-                </button>
-              </div>
-              <div class="d-flex align-items-center flex-wrap" id="search-box">
+              <div class="d-flex align-items-center flex-wrap">
                 <button type="button" class="btn p-0 d-flex colorPelletTwo">
                   <img src="./Assets/phone-outgoing.svg" alt="ButtonOnw" />
                   Call
                 </button>
               </div>
-              <div class="d-flex align-items-center flex-wrap" id="search-box">
+              <div class="d-flex align-items-center flex-wrap">
                 <button type="button" class="btn p-0 d-flex colorPelletTwo">
                   <img src="./Assets/mail.svg" alt="ButtonOnw" />
                   E-Mail
                 </button>
               </div>
-              <div class="d-flex align-items-center flex-wrap" id="search-box">
+              <div class="d-flex align-items-center flex-wrap">
                 <button type="button" class="btn p-0 d-flex colorPelletTwo">
                   <img src="./Assets/messages.svg" alt="ButtonOnw" />
                   Message
                 </button>
               </div>
-              <div class="d-flex align-items-center flex-wrap" id="search-box">
+              <div class="d-flex align-items-center flex-wrap">
                 <button type="button" class="btn p-0 d-flex colorPelletTwo">
                   <img src="./Assets/activity.svg" alt="ButtonOnw" />
                   Activities
                 </button>
               </div>
             </div>
-            <div class="px-2 d-flex gap-5">
+            <div class="px-2 d-flex gap-4 gap-md-5">
               <button type="button" class="btn p-0 d-flex colorPelletTwo">
                 <img src="./Assets/arrow-up-right-circle.svg" alt="ButtonOnw" />
                 More Details
@@ -224,8 +226,8 @@
               <a class="nav-link text-dark" href="#">Customer 360</a>
             </li>
           </ul>
-          <div class="p-3 d-flex" id="mcol">
-            <div>
+          <div class="p-3 d-flex flex-column flex-lg-row">
+            <div class="d-flex justify-content-center d-lg-block">
               <h2
                 class="p-5 py-4 rounded-circle align-items-center justify-content-center d-flex"
                 style="
@@ -241,8 +243,7 @@
             <div class="p-2 px-3">
               <h4 style="color: #5d586b" class="fw-bold">Malcolm Quaday</h4>
               <div
-                class="d-flex border-bottom gap-4 row-gap-1 flex-wrap"
-                id="mcol"
+                class="d-flex border-bottom gap-4 row-gap-1 flex-wrap flex-column flex-lg-row"
               >
                 <div>
                   <div class="d-flex gap-3 justify-content-between">
@@ -328,9 +329,8 @@
                     <div class="d-flex gap-2">
                       <h5 class="fw-bold gap-3 d-flex colorPelletThree">
                         100
-                        <button
-                          type="button"
-                          class="btn d-flex px-2 py-0 align-items-center"
+                        <span
+                          class="badge d-flex px-2 py-0 align-items-center"
                           style="
                             background-color: #d1f4e3;
                             color: #28c76f;
@@ -338,7 +338,7 @@
                           "
                         >
                           Redeem
-                        </button>
+                        </span>
                       </h5>
                     </div>
                   </div>
@@ -453,10 +453,7 @@
       </section>
       <section>
         <div class="bg-white rounded p-3" style="min-width: 22rem">
-          <div
-            class="pb-3 d-flex align-items-center justify-content-between"
-            id="mTop"
-          >
+          <div class="pb-3 d-flex align-items-start justify-content-between">
             <div class="d-flex align-items-center flex-wrap gap-4">
               <h6 class="m-0 fs-5 colorPelletThree">Asset Information</h6>
               <button
@@ -471,7 +468,7 @@
                 SIM 123 456 789
               </button>
             </div>
-            <div class="px-5 gap-5 d-flex" id="mTop">
+            <div class="pe-0 ps-3 gap-5 d-flex pe-lg-5">
               <button type="button" class="btn p-0">
                 <img src="./Assets/plus.svg" alt="ButtonOnw" />
               </button>
@@ -661,7 +658,7 @@
             <div class="d-flex align-items-center gap-5">
               <h6 class="m-0 fs-5 colorPelletThree">Contract</h6>
             </div>
-            <div class="px-5 gap-5 d-flex" id="mTop">
+            <div class="pe-0 ps-3 gap-5 d-flex pe-lg-5">
               <button type="button" class="btn p-0">
                 <img src="./Assets/plus.svg" alt="ButtonOnw" />
               </button>
@@ -766,7 +763,7 @@
             <div class="d-flex align-items-center gap-5">
               <h6 class="m-0 fs-5 colorPelletThree">Document</h6>
             </div>
-            <div class="px-5 gap-5 d-flex" id="mTop">
+            <div class="pe-0 ps-3 gap-5 d-flex pe-lg-5">
               <button type="button" class="btn p-0">
                 <img src="./Assets/plus.svg" alt="ButtonOnw" />
               </button>

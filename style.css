@@ -5,16 +5,10 @@
 }
 body {
   background-color: #f1f3f9 !important;
-  min-height: 100vh;
 }
 .logo {
   height: 2.5rem;
   width: 2.5rem;
-}
-#search-box {
-  position: relative;
-  display: flex;
-  align-items: center;
 }
 #mag {
   position: absolute;
